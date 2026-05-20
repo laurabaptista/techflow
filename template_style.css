@@ -96,12 +96,10 @@ nav a:hover {
     cursor: pointer;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    transition: opacity 0.3s;
 }
 
 .hero button:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
     opacity: 0.85;
 }
 
@@ -208,12 +206,10 @@ form button {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+    transition: opacity 0.3s;
 }
 
 form button:hover {
-    transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
     opacity: 0.85;
 }
 
