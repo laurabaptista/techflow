@@ -90,11 +90,12 @@ nav a:hover {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .hero button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
     background-color: #00cc88;
 }
 
