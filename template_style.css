@@ -1,4 +1,4 @@
-    * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -56,7 +56,6 @@ nav a:hover {
     overflow: hidden;
 }
 
-/* Círculo decorativo atrás do texto */
 .hero::before {
     content: '';
     position: absolute;
@@ -67,18 +66,23 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    pointer-events: none;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero p {
     font-size: 1.3rem;
     color: #aaa;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 .hero button {
@@ -92,13 +96,13 @@ nav a:hover {
     cursor: pointer;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
 }
 
 .hero button:hover {
     transform: translateY(-4px) scale(1.05);
     box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
-    background-color: #00cc88;
+    opacity: 0.85;
 }
 
 .features {
@@ -204,12 +208,12 @@ form button {
     font-size: 1.1rem;
     font-weight: bold;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
-    transition: opacity 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
 }
 
 form button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.5);
     opacity: 0.85;
 }
 
@@ -235,4 +239,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
